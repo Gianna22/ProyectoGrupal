@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viajeras por Argentina</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="body">
+    <!--------Navbar-------->
+    <nav class="nav__nav navbar navbar-expand-lg">
+      <div class="nav__conteiner container-fluid">
+        <a class="navbar-brand" href="./index.html">Inicio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Suscripción
+              </a>
+              <!-- Modal -->
+              <ul class="dropdown-menu">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Suscribite!
+                </button>
+                <!--formulario-->
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                    <div id="emailHelp" class="form-text">Ingrese su email</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Acepto suscribirme</label
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./contacto.html"
+                >Contacto</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"
+               aria-current="page" 
+               href="./aboutUs.html"
+                >Acerca de nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./galery.html"
+                >Galeria de imagenes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./login.html"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <img class="logo" src="./images/logo-1.png" alt="logo" />
+        </div>
+      </div>
+    </nav>
+    <!--------Carousel-------->
+    <div class="main">
+      <div
+        id="carouselExampleCaptions"
+        class="main__carousel carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/Calamuchita.jpg"
+              class="img_carousel d-block w-100"
+              alt="Calamuchita"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark bg-gray rounded-pill">
+                Calamuchita - Córdoba
+              </h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/FaroFinDelMundo.jpg"
+              class="img_carousel d-block w-100"
+              alt="FaroFinDelMundo"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark bg-gray rounded-pill">
+                Faro del Fin del Mundo - Tierra del Fuego
+              </h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/EsterosdelIbera.png"
+              class="img_carousel d-block w-100"
+              alt="EsterosdelIbera"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark bg-gray rounded-pill">
+                Esteros del Iberá - Corrientes
+              </h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/Jujuy.png"
+              class="img_carousel d-block w-100"
+              alt="Jujuy"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark bg-gray rounded-pill">
+                Cerro de los Siete Colores - Jujuy
+              </h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--------Section-------->
+    <div class="section">
+      <div class="section__left">
+        <div class="section__left__cards">
+          <div class="section__left__container-card">
+            <div class="section__left__card">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./images/PlayaBonita.webp"
+                  class="card-img-top"
+                  alt="Bariloche"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    5 Lugares que no te podés perder de Bariloche
+                  </h5>
+                  <p class="card-text">
+                    Bariloche se caracteriza por tener una gran variedad de
+                    paisajes y lugares increíbles, y te mostramos algunos.
+                  </p>
+                  <a href="./entry.html" class="btn-brc btn btn-primary"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="section__left__card">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./images/EsterosdelIbera.png"
+                  class="card-img-top"
+                  alt="EsterosDelIbera"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Esteros del Iberá - Una conexión profunda con la naturaleza
+                  </h5>
+                  <p class="card-text">
+                    Si te gusta conectarte con la naturaleza no te podés perder
+                    uno de los lugares con mayor biodiversidad de la Argentina.
+                  </p>
+                  <a href="./error.html" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="section__left__card">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./images/Mendoza.jpg"
+                  class="card-img-top"
+                  alt="Mendoza"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Top 10 de bodegas que no te podés perder en Mendoza
+                  </h5>
+                  <p class="card-text">
+                    La cuna Argentina del vino nos ofrece una variedad única de
+                    bodegas para todos los gustos y bolsillos.
+                  </p>
+                  <a href="./error.html" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="section__left__card">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./images/Calamuchita.jpg"
+                  class="card-img-top"
+                  alt="Calamuchita"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Córdoba - La provincia de los 1000 destinos
+                  </h5>
+                  <p class="card-text">
+                    Esta maravillosa provincia nos trae una variedad enorme de
+                    destinos y aquí te traemos un top 10 de lugares que no podés
+                    dejar de conocer.
+                  </p>
+                  <a href="./error.html" class="btn-cba btn btn-primary"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__left__container-pagination">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="section__right">
+        <div class="section__right__container-search">
+          <form class="form-search d-flex" role="search">
+            <input
+              class="search form-control me-2"
+              type="search"
+              placeholder="Buscar en el blog"
+              aria-label="Search"
+            />
+            <button class="btn-search btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+        <div class="section__right__container-categories">
+          <div class="section__right__categories-title">Categorías</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a class="section__right__category" href="http://">Córdoba (3)</a>
+            </li>
+            <li class="list-group-item">
+              <a class="section__right__category" href="http://"
+                >Buenos Aires (2)</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a class="section__right__category" href="http://">Mendoza (3)</a>
+            </li>
+            <li class="list-group-item">
+              <a class="section__right__category" href="http://"
+                >Río Negro (1)</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a class="section__right__category" href="http://">Jujuy (2)</a>
+            </li>
+            <li class="list-group-item">
+              <a class="section__right__category" href="http://"
+                >Misiones (1)</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a class="section__right__category" href="http://"
+                >Corrientes (1)</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a class="section__right__category" href="http://"
+                >Tierra del Fuego (1)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="section__right__container-ad">
+          <img class="section__right__ad" src="./images/add.jpg" alt="ad" />
+        </div>
+      </div>
+    </div>
+    <!--------Footer-------->
+    <footer class="footer">
+      <div class="footer__1">
+        <div class="footer__1__container-logo">
+          <img class="footer__1__logo" src="./images/logo-1.png" alt="logo" />
+        </div>
+      </div>
+      <div class="footer__2">
+        <div class="footer__2__container-redes">
+          <i class="footer__2__redes bi bi-instagram"></i>
+        </div>
+        <div class="footer__2__container-redes">
+          <i class="footer__2__redes bi bi-facebook"></i>
+        </div>
+        <div class="footer__2__container-redes">
+          <i class="footer__2__redes bi bi-whatsapp"></i>
+        </div>
+      </div>
+      <div class="footer__3">
+        <div class="footer__3__container-info">
+          <a href="#" class="footer__3__info">Contacto</a>
+          <a href="#" class="footer__3__info">Acerca de nosotros</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

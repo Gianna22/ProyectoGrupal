@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav__nav {
+    background-color: #b7c4cf;
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+
+.nav__conteiner{
+    display: flex;
+}
+
+.logo{
+    width: 40px;
+    border: 1px transparent;
+    border-radius: 50%;
+    
+}
