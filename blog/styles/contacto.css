@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*-----------------------navbar----------------*/
+.nav__nav {
+    background-color: #b7c4cf;
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+
+.nav__conteiner{
+    display: flex;
+}
+
+.logo{
+    width: 40px;
+    border: 1px transparent;
+    border-radius: 50%;
+    
+}
+
+/*contacto*/
+ 
+.body {
+    background-color: #EEE3CB;
+}
+
+.main, .header{
+    background-color: #B7C4CF;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header{
+    font-size: 20px;
+}
+
+.contact__maps{
+    width: 100%;
+}
+
+/*navbar*/
+
+.nav__nav {
+    background-color: #b7c4cf;
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+
+.nav__conteiner{
+    display: flex;
+}
+
+.logo{
+    width: 40px;
+    border: 1px transparent;
+    border-radius: 50%;
+    
+}
+
+/*footer*/
+/*------Mobile-----*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #B7C4CF;
+}
+.footer__1 {
+    margin: auto;
+    margin-top: 20px;
+}
+.footer__1__logo {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 100px;
+}
+.footer__2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 40px;
+}
+.footer__2__container-redes {
+    margin: 10px 25px;
+}
+.footer__2__redes {
+    font-size: 3em;
+    color: #967E76;
+}
+.footer__3 {
+    margin: 10px 0;
+}
+.footer__3__container-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer__3__info {
+    margin: 2% 10%;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+/*-----Desktop-----*/
+
+.footer {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__1 {
+    justify-content: center;
+    margin: auto;
+}
+.footer__2 {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.footer__3 {
+    flex-direction: column;
+    align-content: center;
+}
+
+
+/*-----------------footer-------------------*/
+/*------Mobile-----*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #b7c4cf;
+    padding-top: 20px;
+  }
+  .footer__1 {
+      display: flex;
+    justify-content: center;
+  }
+  .footer__1__logo {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 130px;
+  }
+  .footer__2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 30px;
+    flex-wrap: wrap;
+  }
+  .footer__2__container-redes {
+      padding: 20px;
+  }
+  .footer__2__redes {
+    font-size: 3em;
+    color: #967e76;
+  }
+  .footer__3 {
+      display: flex;
+      justify-content: center;
+    margin-bottom: 20px;
+  }
+  .footer__3__container-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .footer__3__info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  /*-----Desktop-----*/
+  @media (min-width: 1024px) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px 40px;
+    }
+    .footer__1 {
+      justify-content: flex-start;
+    }
+    .footer__1__logo {
+      width: 160px;
+    }
+    .footer__2 {
+      width: 40%;
+    }
+    .footer__2__container-redes {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer__2__redes {
+      font-size: 3.5em;
+    }
+    .footer__3 {
+      flex-direction: column;
+      margin-bottom: 0;
+      justify-content: space-around;
+    }
+    .footer__3__container-info {
+      align-items: flex-end;
+      margin-bottom: 0;
+    }
+    .footer__3__info {
+      margin: 15px 0;
+      font-size: 1.5em;
+    }
+  }
+  
+
